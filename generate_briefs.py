@@ -587,14 +587,13 @@ def build_yuki(filename):
         },
         {
             "timecode": "00:28 → 00:32  ·  CTA",
-            "plan": "Face cam · pot Yuki Cream dans la main · tenu naturellement",
+            "plan": "Face cam · pot Yuki Cream dans la main · tenu naturellement · regard direct",
             "dialogue": [
-                "Le lien est en bio.",
-                "Et ils ont une garantie 30 jours —",
-                "donc tu risques vraiment rien.",
+                "Si ta peau te ressemble —",
+                "le lien est en bio.",
             ],
-            "screen": ["Essai 30 jours · Remboursée si pas convaincue", "Lien en bio ↓"],
-            "intention": "Ton factuel. Pas vendeur. Presque détaché. « tu risques vraiment rien » = évidence, pas argument de vente.",
+            "screen": ["Lien en bio ↓"],
+            "intention": "Court. Confiant. La vidéo a fait tout le travail — le CTA est juste une porte qu'on ouvre. Pas de surenchère, pas de promesse. Juste l'invitation.",
         },
     ]
 
@@ -629,9 +628,8 @@ Semaine un — je tiraillais moins.
 Semaine deux — plus de rougeurs le matin.
 Maintenant j'applique. Et j'oublie. C'est tout ce que je voulais.
 
-Le lien est en bio.
-Et ils ont une garantie 30 jours —
-donc tu risques vraiment rien."""
+Si ta peau te ressemble —
+le lien est en bio."""
     story += script_text_box(s, script_full, cw)
 
     # ── DIRECTION TOURNAGE ────────────────────────────────────────────────────
@@ -659,7 +657,7 @@ donc tu risques vraiment rien."""
         (5, "Gros plan Yuki Cream",      "Ouverture, texture visible",                       "2s", "Présentation produit premium"),
         (6, "Gros plan application",     "Texture appliquée, absorption",                    "3s", "Désir sensoriel"),
         (7, "Face cam — peau lumineuse", "Résultat, sourire naturel",                        "4s", "Aspiration"),
-        (8, "Face cam + produit",        "CTA + garantie",                                   "4s", "Conversion finale"),
+        (8, "Face cam + produit",        "CTA — invitation courte, regard direct",           "3s", "Conversion finale"),
     ], cw)
 
     # ── TEXTES ÉCRAN ──────────────────────────────────────────────────────────
@@ -671,8 +669,7 @@ donc tu risques vraiment rien."""
         ("00:17", "Yuki Cream · crème barrière réparatrice"),
         ("00:24", "S1 : moins de tiraillements"),
         ("00:25", "S2 : peau plus calme"),
-        ("00:29", "Essai 30 jours · Remboursée si pas convaincue"),
-        ("00:30", "Lien en bio ↓"),
+        ("00:29", "Lien en bio ↓"),
     ], cw)
 
     # ── LIVRAISON ─────────────────────────────────────────────────────────────
@@ -837,15 +834,14 @@ def build_shizuku(filename):
             "intention": "« Là — c'est juste ma peau. » Pause avant. Pause après. Fierté calme. Pas d'exclamation. Juste la certitude.",
         },
         {
-            "timecode": "00:24 → 00:28  ·  CTA",
-            "plan": "Face cam · flacon Shizuku dans la main · en disant « ta peau ressemble pas à ça », geste discret vers ton visage",
+            "timecode": "00:24 → 00:27  ·  CTA",
+            "plan": "Face cam · flacon Shizuku dans la main · geste discret vers ton visage en parlant",
             "dialogue": [
-                "Le lien est en bio.",
-                "Et si dans 30 jours ta peau ressemble pas à ça —",
-                "ils remboursent.",
+                "Si tu veux cette peau —",
+                "le lien est en bio.",
             ],
-            "screen": ["Essai 30 jours · Remboursée sinon", "Lien en bio ↓"],
-            "intention": "Le geste vers le visage rappelle l'aspiration une dernière fois. Ton : factuel, serein, pas vendeur.",
+            "screen": ["Lien en bio ↓"],
+            "intention": "Invitation douce. Le geste vers le visage rappelle l'aspiration une dernière fois. On ne pousse pas — on ouvre juste la porte. La vidéo a créé le désir, le CTA le laisse respirer.",
         },
     ]
     for sc in scenes:
@@ -876,8 +872,8 @@ Mon teint était plus uni.
 J'avais cet éclat que j'essayais d'avoir avec du fond de teint.
 Là — c'est juste ma peau.
 
-Le lien est en bio.
-Et si dans 30 jours ta peau ressemble pas à ça — ils remboursent."""
+Si tu veux cette peau —
+le lien est en bio."""
     story += script_text_box(s, script_full, cw)
 
     story += section_header(s, "07 · Tournage", "Direction créative")
@@ -903,7 +899,7 @@ Et si dans 30 jours ta peau ressemble pas à ça — ils remboursent."""
         (5, "Gros plan joue/poignet",   "Application et absorption visible",                 "4s", "Désir tactile"),
         (6, "Face cam",                 "Résultat semaine 2, ton plus vivant",               "4s", "Preuve progressive"),
         (7, "Gros plan peau",           "Peau lumineuse rebondie en close-up",               "2s", "Aspiration maximale"),
-        (8, "Face cam + produit",       "CTA + garantie, geste vers le visage",              "4s", "Conversion"),
+        (8, "Face cam + produit",       "CTA — geste discret vers le visage",                "3s", "Conversion"),
     ], cw)
 
     story += section_header(s, "09 · Textes écran", "Récapitulatif montage")
@@ -914,8 +910,7 @@ Et si dans 30 jours ta peau ressemble pas à ça — ils remboursent."""
         ("00:14", "hydratation qui dure"),
         ("00:20", "2 semaines · peau + souple · teint + uni"),
         ("00:22", "c'est juste ma peau."),
-        ("00:25", "Essai 30 jours · Remboursée sinon"),
-        ("00:26", "Lien en bio ↓"),
+        ("00:25", "Lien en bio ↓"),
     ], cw)
 
     story += section_header(s, "10 · Livraison", "Consignes de rendu")
@@ -1092,17 +1087,15 @@ def build_asahi(filename):
             "intention": "Moment émotionnel le plus fort de la vidéo. Dit doucement. Avec une vraie douceur. Pas d'exclamation. Juste la paix de quelqu'un qui a arrêté de se battre.",
         },
         {
-            "timecode": "00:33 → 00:38  ·  CTA",
+            "timecode": "00:33 → 00:36  ·  CTA",
             "plan": "Face cam · pot Asahi Cream dans la main · regard direct caméra · tenu naturellement",
             "dialogue": [
-                "Ils ont mis une garantie 30 jours.",
-                "Ce qui veut dire que même si t'es sceptique",
-                "— comme je l'étais —",
-                "t'as rien à perdre à essayer.",
+                "Voilà.",
                 "Le lien est en bio.",
+                "Ta peau te dira si j'avais raison.",
             ],
-            "screen": ["Garantie 30 jours · Pour les sceptiques aussi.", "Lien en bio ↓"],
-            "intention": "« comme je l'étais » = inclusion parfaite. Tu te places dans le camp de celle qui regardait avec méfiance. Tu n'es pas la vendeuse. Tu es la cliente convertie.",
+            "screen": ["Lien en bio ↓"],
+            "intention": "Court. Confiant. Presque détaché. « Ta peau te dira si j'avais raison » = on laisse le résultat parler. On ne promet rien de plus. C'est la fin d'une conversation entre deux femmes — pas une conclusion de pub.",
         },
     ]
     for sc in scenes:
@@ -1136,9 +1129,9 @@ Maintenant je mets moins de maquillage le matin.
 Pas parce que j'ai renoncé à prendre soin de moi.
 Parce que j'ai moins besoin de cacher.
 
-Ils ont mis une garantie 30 jours.
-Ce qui veut dire que même si t'es sceptique — comme je l'étais —
-t'as rien à perdre à essayer. Le lien est en bio."""
+Voilà.
+Le lien est en bio.
+Ta peau te dira si j'avais raison."""
     story += script_text_box(s, script_full, cw)
 
     story += section_header(s, "07 · Tournage", "Direction créative")
@@ -1166,7 +1159,7 @@ t'as rien à perdre à essayer. Le lien est en bio."""
         (7,  "Face cam",                    "« Pour ma peau c'était déjà inattendu »",          "4s",  "Anti-hype, crédibilité"),
         (8,  "Face cam",                    "Progression semaine 1 / semaine 2",                "5s",  "Timeline concrète"),
         (9,  "Face cam",                    "« j'ai moins besoin de cacher »",                  "4s",  "Pic émotionnel"),
-        (10, "Face cam + produit",          "CTA + garantie + sceptiques",                      "5s",  "Conversion finale"),
+        (10, "Face cam + produit",          "CTA — court, confiant, regard direct",              "3s",  "Conversion finale"),
     ], cw)
 
     story += section_header(s, "09 · Textes écran", "Récapitulatif montage")
@@ -1182,8 +1175,7 @@ t'as rien à perdre à essayer. Le lien est en bio."""
         ("00:26", "COUVRIR  ≠  CONSTRUIRE"),
         ("00:29", "moins de maquillage."),
         ("00:31", "parce que moins besoin de cacher."),
-        ("00:34", "Garantie 30 jours · Pour les sceptiques aussi."),
-        ("00:36", "Lien en bio ↓"),
+        ("00:34", "Lien en bio ↓"),
     ], cw)
 
     story += section_header(s, "10 · Livraison", "Consignes de rendu")
